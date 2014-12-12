@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang = "sp" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>Yo Vote</title>
+	<script src="lib/angular/angular.min.js"></script>
+</head>
+<body>
+	<h3> Name, please!</h3>
+	<input type="text" ng-model="name">
+	<h2> Advice graciously given by {{name}}.</h2>
+
+	<h3> I need to name my bunny, help me! Please vote on which name you like most.</h3>
+
+
+	<button ng-click="nadcount = nadcount + 1" ng-init="nadcount=0">
+		<h1> Nadira</h1>
+
+  	<button ng-click="bobcount = bobcount + 1" ng-init="bobcount=0">
+  		<h1> Bob </h1>
+ 
+  	<button ng-click="salemcount = salemcount + 1" ng-init="salemcount=0">
+  		<h1>Salem</h1>
+
+</button>
+<span>
+	<h3>how many people love Nadira {{nadcount}}</h3>
+	<h3> how many people love Salem {{salemcount}}</h3>
+	<h3>how many people love Bob {{bobcount}}</h3>
+<br></br>
+	<h2>Fun collage of votes</h2>
+  	{{nadcount}}{{salemcount}}{{nadcount}}{{salemcount}}{{bobcount}}{{nadcount}}{{nadcount}}{{nadcount}}{{salemcount}}{{nadcount}}{{bobcount}}{{nadcount}}{{bobcount}}{{nadcount}}{{salemcount}}{{nadcount}}<br></br>
+  	{{bobcount}}{{nadcount}}{{nadcount}}{{bobcount}}{{bobcount}}{{salemcount}}{{nadcount}}{{bobcount}}{{nadcount}}{{bobcount}}{{nadcount}}{{salemcount}}{{nadcount}}{{salemcount}}{{nadcount}}{{bobcount}}
+
+</span>
+</body>
+</html> 
+
